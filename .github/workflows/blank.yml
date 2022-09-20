@@ -25,8 +25,7 @@ jobs:
         with:
           node-version: 16
       - run: npm i docsify-cli -g
-      - run: docsify init
-      - run: ls
+      - run: ls && cd docs
 
 
 
