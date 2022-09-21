@@ -5,7 +5,7 @@ if (Test-Path $file)
   Remove-Item $file
 }
 # $file = ".\ReadMe.md"
-New-Item $file -ItemType File -Value
+New-Item $file -ItemType File
 Add-Content $file "# DockerFactory"
 Add-Content $file ""
 Add-Content $file "|image|tags|url|"
