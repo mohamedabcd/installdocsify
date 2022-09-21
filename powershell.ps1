@@ -1,5 +1,5 @@
 # New-Item .\ReadMe.md
-$file = ".\ReadMe.md"
+$file = ".\docs\ReadMe.md"
 if (Test-Path $file) 
 {
   Remove-Item $file
