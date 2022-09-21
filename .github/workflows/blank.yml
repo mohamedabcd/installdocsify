@@ -28,7 +28,7 @@ jobs:
         run: |
             npm i docsify-cli -g
             ls
-            cd docs
+            docsify init
             ls
 
 
