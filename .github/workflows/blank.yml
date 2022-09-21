@@ -53,7 +53,7 @@ jobs:
           ls
           cd docs
           ls
-          Get-Content -Path ReadMe.md
+          Get-Content -Path README.md
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
