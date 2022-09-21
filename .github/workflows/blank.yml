@@ -45,22 +45,11 @@ jobs:
             docsify init ./docs
             cd docs
             ls
-      - name: script powershell
+      - name: Build
+        shell: pwsh
         run: |
-            # New-Item ReadMe.md
-            $file = ".\ReadMe.md"
-            if (Test-Path $file) 
-            {
-              Remove-Item $file
-            }
-            # $file = ".\ReadMe.md"
-            New-Item $file -ItemType File -Value
-            Add-Content $file "# DockerFactory"
-            Add-Content $file ""
-            Add-Content $file "|image|tags|url|"
-            Add-Content $file "|--|--|--|"
-            Add-Content $file "|a/cli|latest-stable b-test|"
-            Add-Content $file "|a/cli|latest-stable b-test|"
+          ls
+          ..\powershell.ps1
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
