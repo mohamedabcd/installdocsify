@@ -51,6 +51,9 @@ jobs:
           ls
           .\powershell.ps1
           ls
+          cd docs
+          ls
+          Get-Content -Path ReadMe.md
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
