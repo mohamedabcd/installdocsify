@@ -45,6 +45,9 @@ jobs:
             docsify init ./docs
             cd docs
             ls
+      - name: script powershell
+        run: |
+            ./powershell.ps1
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
