@@ -26,8 +26,12 @@ jobs:
           node-version: 16
       - name: Install Docsify
         run: |
-            docsify init
+            npm i docsify-cli -g
+      - name: Init Docsify
+        run: |
+            docsify init ./docs
             ls
+
 
 
 
