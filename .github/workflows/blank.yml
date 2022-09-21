@@ -24,8 +24,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i docsify-cli -g
-      - run: ls && cd docs
+      - name: Install Docsify
+        run: |
+            npm i docsify-cli -g
+            ls
+            cd docs
+            ls
 
 
 
