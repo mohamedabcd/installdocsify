@@ -30,7 +30,9 @@ jobs:
       - name: Init Docsify
         run: |
             docsify init ./docs
+            cd docs
             ls
+          
 
 
 
